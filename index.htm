@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do Yanuari Subagja</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <main class="rounded-xl p-4 bg-black shadow-xl">
+    <h1 class="text-white 2xl font-semibold text-center pb-5"> To Do List Yanuari</h1>
+    <section>
+      <form>
+        <input class="bg-gray-700 text-white rounded-md p-1 mr-3" type="text" id="todo-Input"
+          placeholder="Add a todo..." required />
+        <input class="bg-gray-700 text-white rounded-md p-1 mr-3" type="date" id="todo-Date" required />
+        <button class="bg-purple-800 text-black rounded-md p-1 w-10" type="button" onclick="addTodo()">+</button>
+      </form>
+    </section>
+
+    <section class="flex justify-between">
+      <button class="bg-white text-black rounded-md p-2 mt-3" type="button" id="Filters">Filter</button>
+      <button class="bg-white text-black rounded-md p-2 mt-3" type="button" onclick="resetTodo()"
+        id="deleteAllBtn">Delete All</button>
+    </section>
+
+    <section class="">
+      <header>
+        <h1 class="text-white 2xl font-semibold text-center p-4">List of To Do</h1>
+      </header>
+
+      <ul class="text-white pt-2" id="todo-list">
+        <li> No Task Available</li>
+      </ul>
+
+  </main>
+
+  <footer class="text-white pt-5">
+    <p>&copy; 2025 Yanuari Subagja All Right Reserverd</p>
+  </footer>
+  <script src="js/script.js"> </script>
+</body>
+
+</html>
